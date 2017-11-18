@@ -5,9 +5,12 @@ import java.rmi.RemoteException;
 
 public interface CalculadoraInterface extends Remote {
 
-	public int add(int vlrA, int vlrB) throws RemoteException;
-	public int sub(int vlrA, int vlrB) throws RemoteException;
-	public int mult(int vlrA, int vlrB) throws RemoteException;
-	public double div(int vlrA, int vlrB) throws RemoteException;
-	
+    public int soma(int argA, int ArgB) throws RemoteException;
+
+    public int sub(int argA, int ArgB) throws RemoteException;
+
+    public int multi(int argA, int ArgB) throws RemoteException;
+
+    public double div(int argA, int ArgB) throws RemoteException;
+
 }
